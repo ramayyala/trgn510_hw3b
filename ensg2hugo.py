@@ -3,6 +3,7 @@ import re
 import csv
 import argparse
 import pandas as pd
+##usage: python3 ensg2hugo.py input.csv -fnumber
 if len(sys.argv) == 3:
     parser = argparse.ArgumentParser(description='Column Choice')
     # Positional mandatory arguments
@@ -14,7 +15,7 @@ if len(sys.argv) == 3:
 #if -f arg not included, set index to 0 by default
 else:
     index=0
-data=sys.argv[2]
+data=sys.argv[1]
 #CHECKS:
 #check to see if index is inbewteen acceptable range of column indexes: 0-9.
 if index not in range(10):
@@ -44,4 +45,4 @@ with open(data,'r') as csv_file:
             list.append(row)
 ##convert list of HUGOID rows to a dataframe to be exported into csv named original_filename.csv
 df = pd.DataFrame(list,columns=header)
-df.to_csv(str(sys.argv[2]+".hugo.csv"),index=False)
+df.to_csv(str(sys.argv[1]+".hugo.csv"),index=False)

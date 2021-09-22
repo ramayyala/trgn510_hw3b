@@ -3,6 +3,7 @@ import seaborn as sns
 import sys
 import pandas as pd
 import matplotlib.pyplot as plt
+##usage: python3 histogram.py input.tsv -fnumber
 ##Parse arguments given and check if -f arg is included
 ## if -f arg included, set index to whatever value given in -f input
 if len(sys.argv) == 3:
@@ -24,6 +25,6 @@ if index not in range(10):
 #load in data given in first input
 data=sys.argv[1]
 dataframe = pd.read_csv(data,sep='\t')
-#Plot histogram and save to histogram.png in directory running in 
+#Plot histogram and save to histogram.png in directory running in
 sns.histplot(data=dataframe, x=dataframe.iloc[:, index])
 plt.savefig('histogram.png')

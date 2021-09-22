@@ -2,6 +2,7 @@
 import phonenumbers as pn
 import re
 import sys
+##usage: python3 extract_phonenum.py input.txt
 #takes in input text
 filename = sys.argv[1]
 #opens and reads text file to a string
