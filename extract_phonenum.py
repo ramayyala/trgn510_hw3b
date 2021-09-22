@@ -1,16 +1,3 @@
-##Install phonenumbers module if not installed
-def install_and_import(package):
-    import importlib
-    try:
-        importlib.import_module(package)
-    except ImportError:
-        import pip
-        pip.main(['install', package])
-    finally:
-        globals()[package] = importlib.import_module(package)
-
-
-install_and_import('phonenumbers')
 ##import used modules
 import phonenumbers as pn
 import re
