@@ -1,8 +1,8 @@
 # About
 * Documentation for three scripts:<br />
-    * extract_phonenum.py<br />
-    * ensg2hugo.py<br />
-    * histogram.py<br />
+    * extract_phonenum.py[extract_phonenum.py](https://github.com/ramayyala/trgn_assignment3b#extract_phonenumpy)<br />
+    * ensg2hugo.py[ensg2hugo.py](https://github.com/ramayyala/trgn_assignment3b#ensg2hugopy)<br />
+    * histogram.py[histogram.py](https://github.com/ramayyala/trgn_assignment3b#histogrampy)
 # extract_phonenum.py<br />
 ## Usage<br />
 `python3 extract_phonenum.py text.txt`<br />
